@@ -117,6 +117,6 @@ function openModal(villainId) {
     if (!villain) return;
     
     const modal = document.getElementById('detailModal');
-    showVillainDetails(villain);
     modal.classList.add('active');
+    showVillainDetails(villain);
 }
