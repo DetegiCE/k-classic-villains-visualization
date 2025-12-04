@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고전소설 속 악인 33인 외모 묘사 분석</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <header>
+        <h1>고전소설 속 악인 33인 외모 묘사 분석</h1>
+        <nav>
+            <button id="toggleViewBtn" class="nav-btn">리스트 보기</button>
+            <button id="statsBtn" class="nav-btn">통계 보기</button>
+        </nav>
+    </header>
+
+    <main id="mainContent">
+        <!-- Floating View -->
+        <div id="floatingView" class="view active">
+            <div id="floatingContainer" class="floating-container"></div>
+        </div>
+
+        <!-- List View -->
+        <div id="listView" class="view">
+            <div id="listContainer" class="list-container"></div>
+        </div>
+    </main>
+
+    <!-- Detail Modal -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <div class="image-slider">
+                        <img id="modalImage" src="" alt="악인 이미지">
+                        <div class="slider-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <h2 id="modalName" class="villain-name"></h2>
+                    <p id="modalWork" class="villain-work"></p>
+                    
+                    <div class="detail-section">
+                        <h3>외모 묘사</h3>
+                        <p id="modalDescription" class="description"></p>
+                        <p id="modalSource" class="source"></p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>추출된 키워드</h3>
+                        <div id="modalKeywords" class="keywords"></div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>감성 분석 결과</h3>
+                        <canvas id="sentimentChart"></canvas>
+                        <p id="modalSentiment" class="sentiment-result"></p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>비슷한 감성의 악인</h3>
+                        <div id="similarVillains" class="similar-villains"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>2025-2 고려대학교 디지털인문학과 고전문학 김류빈·장연희·전명주·정지우</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
