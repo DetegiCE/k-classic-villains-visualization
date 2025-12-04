@@ -41,15 +41,15 @@ function toggleView() {
 // Initialize floating view
 function initFloatingView() {
     const container = document.getElementById('floatingContainer');
-    const containerWidth = container.offsetWidth || window.innerWidth - 100;
-    const containerHeight = container.offsetHeight || window.innerHeight - 300;
+    const containerWidth = container.offsetWidth;
+    const containerHeight = container.offsetHeight;
 
     villainsData.forEach((villain, index) => {
         const card = createFloatingCard(villain);
         
         // Random position
-        const randomX = Math.random() * (containerWidth - 200);
-        const randomY = Math.random() * (containerHeight - 250);
+        const randomX = Math.random() * (containerWidth - 100);
+        const randomY = Math.random() * (containerHeight - 150);
         
         card.style.left = `${randomX}px`;
         card.style.top = `${randomY}px`;
@@ -68,7 +68,9 @@ function createFloatingCard(villain) {
     card.dataset.villainId = villain.id;
     
     card.innerHTML = `
-        <img src="${villain.image1}" alt="${villain.name}">
+        <div class="img-container">
+            <img src="${villain.image1}" alt="${villain.name}">
+        </div>
         <div class="card-info">
             <div class="card-name">${villain.name}</div>
             <div class="card-work">${villain.work}</div>

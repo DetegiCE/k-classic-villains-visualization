@@ -56,7 +56,6 @@ nav {
 
 main {
     flex: 1;
-    padding: 2rem;
     overflow: hidden;
 }
 
@@ -79,10 +78,7 @@ main {
 
 .floating-card {
     position: absolute;
-    width: 200px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -95,13 +91,23 @@ main {
     z-index: 10;
 }
 
+.floating-card .img-container {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 0.5rem;
+    border: 2px solid blueviolet;
+}
+
 .floating-card img {
-    width: 2rem;
-    height: 2rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .floating-card .card-info {
-    padding: 1rem;
     text-align: center;
 }
 
