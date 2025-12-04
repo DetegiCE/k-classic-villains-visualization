@@ -18,7 +18,7 @@ const villainsData = [
             neutral: 5
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/764ba2/ffffff?text=장화",
+        image1: "img/test.jpg",
         image2: "https://via.placeholder.com/400x400/667eea/ffffff?text=장화+2"
     },
     {
@@ -39,7 +39,7 @@ const villainsData = [
             neutral: 10
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/f093fb/ffffff?text=허생원",
+        image1: "img/test.jpg",
         image2: "https://via.placeholder.com/400x400/f5576c/ffffff?text=허생원+2"
     },
     {
@@ -60,7 +60,7 @@ const villainsData = [
             neutral: 5
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/667eea/ffffff?text=강씨부인",
+        image1: "img/test.jpg",
         image2: "https://via.placeholder.com/400x400/764ba2/ffffff?text=강씨부인+2"
     },
     {
@@ -81,7 +81,7 @@ const villainsData = [
             neutral: 10
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/f5576c/ffffff?text=변학도",
+        image1: "img/test.jpg",
         image2: "https://via.placeholder.com/400x400/f093fb/ffffff?text=변학도+2"
     },
     {
@@ -648,7 +648,7 @@ const villainsData = [
             neutral: 2
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/667eea/ffffff?text=도적",
+        image1: "img/test.jpg",
         image2: "https://via.placeholder.com/400x400/764ba2/ffffff?text=도적+2"
     },
     {
