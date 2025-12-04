@@ -4,6 +4,9 @@ let currentImageIndex = 0;
 let imageSliderInterval = null;
 let sentimentChart = null;
 
+// Constants
+const IMAGE_SLIDER_INTERVAL_MS = 3000;
+
 // Setup modal event listeners
 document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('detailModal');
@@ -83,12 +86,8 @@ function setupImageSlider(villain) {
         clearInterval(imageSliderInterval);
     }
     
-    // Auto slide every 3 seconds
-    imageSliderInterval = setInterval(() => {
-        currentImageIndex = (currentImageIndex + 1) % 2;
-        modalImage.src = images[currentImageIndex];
-        updateDots();
-    }, 3000);
+    // Start auto-slide
+    startImageSlider(images, modalImage);
     
     // Setup dot click handlers
     dots.forEach((dot, index) => {
@@ -99,15 +98,20 @@ function setupImageSlider(villain) {
             
             // Reset interval
             clearInterval(imageSliderInterval);
-            imageSliderInterval = setInterval(() => {
-                currentImageIndex = (currentImageIndex + 1) % 2;
-                modalImage.src = images[currentImageIndex];
-                updateDots();
-            }, 3000);
+            startImageSlider(images, modalImage);
         });
     });
     
     updateDots();
+}
+
+// Start image slider with auto-slide
+function startImageSlider(images, modalImage) {
+    imageSliderInterval = setInterval(() => {
+        currentImageIndex = (currentImageIndex + 1) % 2;
+        modalImage.src = images[currentImageIndex];
+        updateDots();
+    }, IMAGE_SLIDER_INTERVAL_MS);
 }
 
 // Update slider dots
