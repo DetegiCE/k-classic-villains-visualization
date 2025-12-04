@@ -86,6 +86,15 @@ function generateCharts() {
 function createBarChart(canvasId, wordData, label) {
     const ctx = document.getElementById(canvasId);
     
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not loaded, skipping chart rendering');
+        ctx.style.display = 'none';
+        return;
+    }
+    
+    ctx.style.display = 'block';
+    
     // Destroy existing chart if any
     if (canvasId === 'nounChart' && nounChartInstance) {
         nounChartInstance.destroy();

@@ -126,6 +126,15 @@ function updateDots() {
 function updateSentimentChart(villain) {
     const ctx = document.getElementById('sentimentChart');
     
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not loaded, skipping chart rendering');
+        ctx.style.display = 'none';
+        return;
+    }
+    
+    ctx.style.display = 'block';
+    
     // Destroy existing chart
     if (sentimentChart) {
         sentimentChart.destroy();
