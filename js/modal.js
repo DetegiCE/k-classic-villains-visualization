@@ -10,7 +10,9 @@ const IMAGE_SLIDER_INTERVAL_MS = 3000;
 // Setup modal event listeners
 document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('detailModal');
+    const modalContent = document.querySelector('.modal-content');
     const closeBtn = document.querySelector('.close');
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
     
     closeBtn.addEventListener('click', closeModal);
     
@@ -25,6 +27,24 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }
     });
+
+    // Scroll to top button functionality
+    if (modalContent && scrollToTopBtn) {
+        modalContent.addEventListener('scroll', () => {
+            if (modalContent.scrollTop > 200) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            modalContent.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 });
 
 // Show villain details in modal
@@ -337,7 +357,9 @@ function createSimilarCard(villain) {
 // Close modal
 function closeModal() {
     const modal = document.getElementById('detailModal');
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
     modal.classList.remove('active');
+    scrollToTopBtn.classList.remove('visible');
     
     // Clear interval
     if (imageSliderInterval) {
