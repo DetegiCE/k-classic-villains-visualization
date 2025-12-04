@@ -73,21 +73,30 @@ function updateKeywords(villain) {
         });
     };
 
+    // To prevent multiple event listeners, clone and replace the button
+    const newShowMoreBtn = showMoreBtn.cloneNode(true);
+    showMoreBtn.parentNode.replaceChild(newShowMoreBtn, showMoreBtn);
+
     if (allKeywords.length > 5) {
+        let isExpanded = false;
         displayKeywords(allKeywords.slice(0, 5));
-        showMoreBtn.style.display = 'inline-block';
+        newShowMoreBtn.style.display = 'inline-block';
+        newShowMoreBtn.textContent = '더보기';
         
-        const showMoreHandler = () => {
-            displayKeywords(allKeywords);
-            showMoreBtn.style.display = 'none';
-            showMoreBtn.removeEventListener('click', showMoreHandler); // To avoid multiple listeners
-        };
-        
-        showMoreBtn.addEventListener('click', showMoreHandler);
+        newShowMoreBtn.addEventListener('click', () => {
+            isExpanded = !isExpanded;
+            if (isExpanded) {
+                displayKeywords(allKeywords);
+                newShowMoreBtn.textContent = '줄이기';
+            } else {
+                displayKeywords(allKeywords.slice(0, 5));
+                newShowMoreBtn.textContent = '더보기';
+            }
+        });
 
     } else {
         displayKeywords(allKeywords);
-        showMoreBtn.style.display = 'none';
+        newShowMoreBtn.style.display = 'none';
     }
 }
 
