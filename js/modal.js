@@ -55,21 +55,40 @@ function showVillainDetails(villain) {
 // Update keywords display
 function updateKeywords(villain) {
     const keywordsContainer = document.getElementById('modalKeywords');
+    const showMoreBtn = document.getElementById('showMoreKeywords');
     keywordsContainer.innerHTML = '';
-    
-    villain.nouns.forEach(noun => {
-        const span = document.createElement('span');
-        span.className = 'keyword noun';
-        span.textContent = noun;
-        keywordsContainer.appendChild(span);
-    });
-    
-    villain.adjectives.forEach(adj => {
-        const span = document.createElement('span');
-        span.className = 'keyword adjective';
-        span.textContent = adj;
-        keywordsContainer.appendChild(span);
-    });
+
+    const allKeywords = [
+        ...villain.nouns.map(noun => ({ text: noun, type: 'noun' })),
+        ...villain.adjectives.map(adj => ({ text: adj, type: 'adjective' }))
+    ];
+
+    const displayKeywords = (keywords) => {
+        keywordsContainer.innerHTML = '';
+        keywords.forEach(keyword => {
+            const span = document.createElement('span');
+            span.className = `keyword ${keyword.type}`;
+            span.textContent = keyword.text;
+            keywordsContainer.appendChild(span);
+        });
+    };
+
+    if (allKeywords.length > 5) {
+        displayKeywords(allKeywords.slice(0, 5));
+        showMoreBtn.style.display = 'inline-block';
+        
+        const showMoreHandler = () => {
+            displayKeywords(allKeywords);
+            showMoreBtn.style.display = 'none';
+            showMoreBtn.removeEventListener('click', showMoreHandler); // To avoid multiple listeners
+        };
+        
+        showMoreBtn.addEventListener('click', showMoreHandler);
+
+    } else {
+        displayKeywords(allKeywords);
+        showMoreBtn.style.display = 'none';
+    }
 }
 
 // Setup image slider
