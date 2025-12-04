@@ -1,0 +1,13 @@
+{
+  "name": "k-classic-villains-visualization",
+  "version": "1.0.0",
+  "description": "Interactive visualization of 33 villains from classical Korean literature",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000"
+  },
+  "keywords": ["korean-literature", "visualization", "digital-humanities"],
+  "author": "김류빈·장연희·전명주·정지우",
+  "license": "MIT"
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>통계 분석 - 고전소설 속 악인</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/statistics.css">
+</head>
+<body>
+    <header>
+        <h1>외모 묘사 키워드 통계</h1>
+        <nav>
+            <button id="backBtn" class="nav-btn">메인으로</button>
+        </nav>
+    </header>
+
+    <main id="statsContent">
+        <section class="stats-section">
+            <h2>명사 워드클라우드</h2>
+            <div id="nounWordCloud" class="wordcloud-container"></div>
+        </section>
+
+        <section class="stats-section">
+            <h2>명사 빈도 분석</h2>
+            <canvas id="nounChart"></canvas>
+        </section>
+
+        <section class="stats-section">
+            <h2>형용사 워드클라우드</h2>
+            <div id="adjectiveWordCloud" class="wordcloud-container"></div>
+        </section>
+
+        <section class="stats-section">
+            <h2>형용사 빈도 분석</h2>
+            <canvas id="adjectiveChart"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025-2 고려대학교 디지털인문학과고전문학 김류빈·장연희·전명주·정지우</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/statistics.js"></script>
+</body>
+</html>
