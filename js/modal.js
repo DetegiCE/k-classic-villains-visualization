@@ -35,7 +35,7 @@ function showVillainDetails(villain) {
     // Update basic info
     document.getElementById('modalName').textContent = villain.name;
     document.getElementById('modalWork').textContent = villain.work;
-    document.getElementById('modalDescription').textContent = villain.description;
+    updateDescription(villain); // Updated this line
     document.getElementById('modalSource').textContent = `출처: ${villain.source}`;
     
     // Update keywords
@@ -98,6 +98,38 @@ function updateKeywords(villain) {
         displayKeywords(allKeywords);
         newShowMoreBtn.style.display = 'none';
     }
+}
+
+// Update description with show more/less functionality
+function updateDescription(villain) {
+    const descriptionContainer = document.getElementById('modalDescription');
+    const fullText = villain.description;
+
+    if (fullText.length <= 300) {
+        descriptionContainer.innerHTML = fullText;
+        return;
+    }
+
+    const shortText = fullText.substring(0, 300);
+    let isExpanded = false;
+
+    const render = () => {
+        if (isExpanded) {
+            descriptionContainer.innerHTML = `${fullText} <span class="toggle-description" style="cursor: pointer; color: #999; font-style: italic;">(줄이기)</span>`;
+        } else {
+            descriptionContainer.innerHTML = `${shortText}... <span class="toggle-description" style="cursor: pointer; color: #999; font-style: italic;">(더보기)</span>`;
+        }
+
+        const toggleButton = descriptionContainer.querySelector('.toggle-description');
+        if (toggleButton) {
+            toggleButton.addEventListener('click', () => {
+                isExpanded = !isExpanded;
+                render();
+            }, { once: true }); // Use { once: true } to avoid multiple listeners if render is called elsewhere
+        }
+    };
+
+    render();
 }
 
 // Setup image slider
