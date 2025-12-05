@@ -291,9 +291,9 @@
 #scrollToTopBtn {
     opacity: 0;
     visibility: hidden;
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
+    position: absolute;
+    bottom: 10px;
+    left: calc(100% - 90px);
     z-index: 1002;
     border: none;
     outline: none;
@@ -305,14 +305,13 @@
     width: 50px;
     height: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.3s;
-    transform: translateY(30px);
+    transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out, visibility 0.3s;
 }
 
 #scrollToTopBtn.visible {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    bottom: 40px;
 }
 
 #scrollToTopBtn:hover {
