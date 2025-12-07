@@ -312,15 +312,15 @@
     z-index: 1002;
     border: none;
     outline: none;
-    background-color: #764ba2;
-    color: white;
+    background-color: #ebd6ff;
+    color: rgb(20, 9, 25);
     cursor: pointer;
     padding: 10px;
     border-radius: 50%;
     width: 50px;
     height: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out, visibility 0.3s;
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, bottom 0.3s ease-in-out, visibility 0.3s;
 }
 
 #scrollToTopBtn.visible {
@@ -330,7 +330,7 @@
 }
 
 #scrollToTopBtn:hover {
-    background-color: #667eea;
+    background-color: #b8c5ff;
 }
 
 #scrollToTopBtn svg {
