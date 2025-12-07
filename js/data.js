@@ -582,23 +582,23 @@ const villainsData = [
     },
     {
         id: 30,
-        name: "기생",
-        work: "기생전",
-        description: "화려한 외모에 긴 머리카락이며, 눈이 크고 입술이 붉어 매혹적이다.",
-        source: "기생전, 제4장",
-        nouns: ["외모", "머리카락", "눈", "입술"],
-        adjectives: ["화려하다", "길다", "크다", "붉다", "매혹적이다"],
+        name: "유교아",
+        work: "명주보월빙",
+        description: "어사가 뚫어보는 눈으로 신부를 보니 흰 낯은 배꽃이 봄비를 맞은 듯하고 두 뺨은 복숭아꽃 같으며 앵두 같은 입술이 붉은 빛을 머금었으나 초승달 같은 눈썹에는 살기가 등등하여 음잡함이 가득하고 두 눈에는 독사의 모짊이 드러나 있고 얼굴에는 불길한 기운이 어려 있어 선종할 상격이 아니라 어사가 경악하고 두려워하여 소매를 떨쳐 사랑채으로 나가니",
+        source: "장시광,『조선시대 대하소설의 여성반동인물』, 한국학술정보, 2006, 220쪽.",
+        nouns: ['경악', '듯', '두', '눈썹', '입술', '어사', '얼굴', '낯', '앵두', '살기', '초승달', '봄비', '눈', '소매', '선종', '복숭아꽃', '독사', '신부', '상격', '뺨', '사랑', '모짊', '배꽃', '빛', '기운', '음잡함', '머금었으'],
+        adjectives: ['희다', '불길하다', '가득하다', '있다', '두렵다', '같다', '붉다', '아니다', '등등하다'],
         sentiment: {
-            disgust: 5,
-            anger: 8,
-            fear: 10,
-            surprise: 22,
-            happiness: 35,
-            sadness: 8,
-            neutral: 12
+            disgust: 0.07789,
+            anger: 7.47166,
+            fear: 92.34929,
+            surprise: 0.02031,
+            happiness: 0.04293,
+            sadness: 0.02107,
+            neutral: 0.01686
         },
         sentimentClass: "positive",
-        images: ["https://via.placeholder.com/400x400/f093fb/ffffff?text=기생", "https://via.placeholder.com/400x400/f5576c/ffffff?text=기생+2"]
+        images: ["img/01_classic/30_01.png", "img/01_classic/30_02.png", "img/02_modern/30.png"]
     },
     {
         id: 31,
