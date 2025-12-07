@@ -18,7 +18,7 @@ const villainsData = [
             neutral: 0.00089
         },
         sentimentClass: "negative",
-        images: ["img/test.jpg", "https://via.placeholder.com/400x400/667eea/ffffff?text=장화+2"]
+        images: ["img/01_classic/01.png", "img/02_modern/01.png"]
     },
     {
         id: 2,
