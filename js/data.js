@@ -242,23 +242,23 @@ const villainsData = [
     },
     {
         id: 13,
-        name: "심청",
-        work: "심청전",
-        description: "가녀린 체구에 창백한 얼굴이며, 눈이 크고 깊어 슬픔이 가득하다.",
-        source: "심청전, 제4장",
-        nouns: ["체구", "얼굴", "눈", "슬픔"],
-        adjectives: ["가녀리다", "창백하다", "크다", "깊다"],
+        name: "심씨",
+        work: "창선감의록",
+        description: "심씨는 말을 잘하고 제법 인물이 있었지만 시기심이 강했다. 심씨는 말을 잘하고 얼굴은 예뻤으나 심성은 사납고 시기심이 많은 인물로 그려진다.",
+        source: "이지영 역, 「창선감의록」, 『한국고전문학전집』, 문학동, 2010년, 20-21쪽. / 김수연,「<창선감의록>의 ‘개과천선’과 악녀(惡女) 무후(無後)」, 『한국고전여성문학연구』 제25호, 한국고전여성문학연구, 2012년, 335-363쪽.",
+        nouns: ['심씨', '시기심', '얼굴', '심성은', '인물', '제법', '말'],
+        adjectives: ['예쁘다', '사납다', '있다', '많다', '강하다'],
         sentiment: {
-            disgust: 5,
-            anger: 3,
-            fear: 10,
-            surprise: 8,
-            happiness: 2,
-            sadness: 60,
-            neutral: 12
+            disgust: 0.00050,
+            anger: 0.00075,
+            fear: 0.00029,
+            surprise: 0.00044,
+            happiness: 0.00053,
+            sadness: 0.00033,
+            neutral: 99.99715
         },
-        sentimentClass: "negative",
-        images: ["https://via.placeholder.com/400x400/764ba2/ffffff?text=심청", "https://via.placeholder.com/400x400/667eea/ffffff?text=심청+2"]
+        sentimentClass: "positive",
+        images: ["img/01_classic/13.png", "img/02_modern/13.png"]
     },
     {
         id: 14,
