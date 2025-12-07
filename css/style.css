@@ -97,7 +97,7 @@ main {
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 0.5rem;
-    border: 2px solid blueviolet;
+    transition: box-shadow 0.3s;
 }
 
 .floating-card img {
@@ -114,12 +114,55 @@ main {
 .floating-card .card-name {
     font-weight: bold;
     font-size: 1.1rem;
-    color: blueviolet;
 }
 
 .floating-card .card-work {
     font-size: 0.9rem;
     color: #666;
+}
+
+/* Sentiment Colors */
+.floating-card.sentiment-positive .img-container {
+    box-shadow: 0 0 15px 5px rgba(40, 167, 69, 0.6); /* Green */
+}
+.floating-card.sentiment-negative .img-container {
+    box-shadow: 0 0 15px 5px rgba(220, 53, 69, 0.6); /* Red */
+}
+.floating-card.sentiment-neutral .img-container {
+    box-shadow: 0 0 15px 5px rgba(108, 117, 125, 0.6); /* Gray */
+}
+
+.list-card.sentiment-positive {
+    box-shadow: 0 0 20px 5px rgba(40, 167, 69, 0.5); /* Green */
+}
+.list-card.sentiment-negative {
+    box-shadow: 0 0 20px 5px rgba(220, 53, 69, 0.5); /* Red */
+}
+.list-card.sentiment-neutral {
+    box-shadow: 0 0 20px 5px rgba(108, 117, 125, 0.5); /* Gray */
+}
+
+.list-card.sentiment-positive:hover {
+    box-shadow: 0 10px 30px 5px rgba(40, 167, 69, 0.7);
+}
+.list-card.sentiment-negative:hover {
+    box-shadow: 0 10px 30px 5px rgba(220, 53, 69, 0.7);
+}
+.list-card.sentiment-neutral:hover {
+    box-shadow: 0 10px 30px 5px rgba(108, 117, 125, 0.7);
+}
+
+.floating-card.sentiment-positive .card-name,
+.list-card.sentiment-positive .card-name {
+    color: #28a745;
+}
+.floating-card.sentiment-negative .card-name,
+.list-card.sentiment-negative .card-name {
+    color: #dc3545;
+}
+.floating-card.sentiment-neutral .card-name,
+.list-card.sentiment-neutral .card-name {
+    color: #6c757d;
 }
 
 @keyframes float {
@@ -148,7 +191,7 @@ main {
 .list-card {
     background: white;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); */
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -156,7 +199,7 @@ main {
 
 .list-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); */
 }
 
 .list-card img {
@@ -172,7 +215,6 @@ main {
 .list-card .card-name {
     font-weight: bold;
     font-size: 1.2rem;
-    color: #764ba2;
     margin-bottom: 0.5rem;
 }
 

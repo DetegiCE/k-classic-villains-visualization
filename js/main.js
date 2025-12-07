@@ -64,7 +64,7 @@ function initFloatingView() {
 // Create floating card element
 function createFloatingCard(villain) {
     const card = document.createElement('div');
-    card.className = 'floating-card';
+    card.className = `floating-card sentiment-${villain.sentimentClass}`;
     card.dataset.villainId = villain.id;
     
     card.innerHTML = `
@@ -95,7 +95,7 @@ function initListView() {
 // Create list card element
 function createListCard(villain) {
     const card = document.createElement('div');
-    card.className = 'list-card';
+    card.className = `list-card sentiment-${villain.sentimentClass}`;
     card.dataset.villainId = villain.id;
     
     card.innerHTML = `
