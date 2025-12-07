@@ -602,23 +602,23 @@ const villainsData = [
     },
     {
         id: 31,
-        name: "도적",
-        work: "도적전",
-        description: "험악한 인상에 눈빛이 번뜩이며, 턱수염이 거칠고 손이 크다.",
-        source: "도적전, 제6장",
-        nouns: ["인상", "눈빛", "턱수염", "손"],
-        adjectives: ["험악하다", "번뜩이다", "거칠다", "크다"],
+        name: "여수정",
+        work: "윤하정삼문취록",
+        description: "신부가 폐백을 받들어 시부모께 바치고 팔배대례를 이룰 때 현란한 자태와 고운 얼굴이 사람의 정신을 잃게 하고 온갖 태도가 기묘하고 얼굴이 뛰어나나 지각이 밝은 자가 볼 때에는 그 맑은 눈에 한없는 살기가 들어 있고 음탕하고 사악한 기운이 가득하고 아름다운 외모에 불길한 기운이 맺혀 승냥이와 호랑이와 뱀과 전갈의 흉심이 있으니 ",
+        source: "장시광,『조선시대 대하소설의 여성반동인물』, 한국학술정보, 2006, 220-221쪽.",
+        nouns: ['자태', '사람', '자가', '얼굴', '팔배', '뱀', '태도', '그', '지각', '살기', '때', '눈', '례', '폐백', '외모', '흉심', '신부', '바치', '볼', '전갈', '시부모', '온갖', '승냥이', '기운', '호랑이', '맑은', '정신']        ,
+        adjectives: ['뛰어나다', '불길하다', '한없다', '가득하다', '곱다', '있다', '아름답다', '사악하다', '기묘하다', '현란하다', '음탕하다'],
         sentiment: {
-            disgust: 35,
-            anger: 40,
-            fear: 15,
-            surprise: 5,
-            happiness: 0,
-            sadness: 3,
-            neutral: 2
+            disgust: 2.06830,
+            anger: 0.01034,
+            fear: 0.06597,
+            surprise: 0.02191,
+            happiness: 5.13066,
+            sadness: 0.02436,
+            neutral: 92.67846
         },
-        sentimentClass: "negative",
-        images: ["img/test.jpg", "https://via.placeholder.com/400x400/764ba2/ffffff?text=도적+2"]
+        sentimentClass: "positive",
+        images: ["img/01_classic/31.png", "img/02_modern/31.png"]
     },
     {
         id: 32,
