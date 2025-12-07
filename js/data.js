@@ -302,23 +302,23 @@ const villainsData = [
     },
     {
         id: 16,
-        name: "임경업",
-        work: "임경업전",
-        description: "강인한 체격에 각진 얼굴이며, 눈빛이 날카롭고 미간에 주름이 있다.",
-        source: "임경업전, 제7장",
-        nouns: ["체격", "얼굴", "눈빛", "미간", "주름"],
-        adjectives: ["강인하다", "각지다", "날카롭다"],
+        name: "교채란",
+        work: "사씨남정기",
+        description: "주홍군의 패옥 소리가 맑게 울리고 황홀히 빛나서 마치 신선과 같이 아리따운 자태였다.",
+        source: "다빈치맵, \"사씨남정기\", http://www.davincimap.co.kr/davBase/Source/davSource.jsp?Job=Body&SourID=SOUR001314",
+        nouns: ['소리', '자태', '신선', '패옥', '홍군', '마치'],
+        adjectives: ['황홀하다', '아리땁다', '맑다'],
         sentiment: {
-            disgust: 10,
-            anger: 35,
-            fear: 20,
-            surprise: 10,
-            happiness: 5,
-            sadness: 10,
-            neutral: 10
+            disgust: 0.00079,
+            anger: 0.00017,
+            fear: 0.00073,
+            surprise: 0.00017,
+            happiness: 99.99352,
+            sadness: 0.00028,
+            neutral: 0.00434
         },
-        sentimentClass: "negative",
-        images: ["https://via.placeholder.com/400x400/f5576c/ffffff?text=임경업", "https://via.placeholder.com/400x400/f093fb/ffffff?text=임경업+2"]
+        sentimentClass: "positive",
+        images: ["img/01_classic/16.png", "img/02_modern/16_01.png", "img/02_modern/16_02.png"]
     },
     {
         id: 17,
