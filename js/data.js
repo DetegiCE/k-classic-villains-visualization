@@ -42,23 +42,23 @@ const villainsData = [
     },
     {
         id: 3,
-        name: "강씨부인",
-        work: "춘향전",
-        description: "얼굴이 창백하고 입가에 주름이 깊으며, 눈초리가 올라가 매서운 인상이다.",
-        source: "춘향전, 제5장",
-        nouns: ["얼굴", "입가", "주름", "눈초리", "인상"],
-        adjectives: ["창백하다", "깊다", "올라가다", "매섭다"],
+        name: "허씨",
+        work: "장화 홍련전",
+        description: "두 볼은 한 자가 넘고, 눈은 퉁방울 같고, 코는 질병 같고, 입은 메기 같고, 머리털은 돼지털 같고, 키는 장승만 하고, 소리는 이리 소리 같고, 허리는 두 아름이나 되는 것이 게다가 곰배팔이요, 수종다리에 쌍언청이를 겸하였고, 그 주둥이를 썰어 내면 열 사발은 되고, 얽기는 콩멍석 같으니 그 형상은 차마 바고 보기 어려운 데다가",
+        source: "다빈치맵, \"장화홍련전\", http://www.davincimap.co.kr/davBase/Source/davSource.jsp?Job=Body&SourID=SOUR001970",
+        nouns: ['소리', '겸', '두', '장승', '자가', '데', '바고', '것', '방울', '그', '머리털', '메기', '열', '질병', '차마', '눈', '털', '퉁', '게다가', '허리', '멍석', '형상', '주둥이', '콩', '곰배', '돼지', '쌍', '종다리', '사발', '볼', '다가', '팔이', '코', '아름', '내면', '보기', '키', '언청이'],
+        adjectives: ['어렵다', '같다'],
         sentiment: {
-            disgust: 30,
-            anger: 25,
-            fear: 15,
-            surprise: 5,
-            happiness: 0,
-            sadness: 20,
-            neutral: 5
+            disgust: 99.92662,
+            anger: 0.06116,
+            fear: 0.00521,
+            surprise: 0.00098,
+            happiness: 0.00318,
+            sadness: 0.00222,
+            neutral: 0.00062
         },
         sentimentClass: "negative",
-        images: ["img/test.jpg", "https://via.placeholder.com/400x400/764ba2/ffffff?text=강씨부인+2"]
+        images: ["img/01_classic/03.png", "img/02_modern/03.png"]
     },
     {
         id: 4,
