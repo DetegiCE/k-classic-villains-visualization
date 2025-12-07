@@ -522,23 +522,23 @@ const villainsData = [
     },
     {
         id: 27,
-        name: "궁녀",
-        work: "궁녀전",
-        description: "단아한 외모에 가느다란 눈썹이며, 입술이 작고 피부가 희다.",
-        source: "궁녀전, 제3장",
-        nouns: ["외모", "눈썹", "입술", "피부"],
-        adjectives: ["단아하다", "가늘다", "작다", "희다"],
+        name: "여씨",
+        work: "쌍천기봉",
+        description: "여씨 얼굴이 얼음처럼 맑고 옥비단처럼 고와 절대가인이로되 공은 기뻐하지 아니하여 기색이 차갑게 가라앉더니",
+        source: "장시광,『조선시대 대하소설의 여성반동인물』, 한국학술정보, 2006, 216쪽.",
+        nouns: ['기색', '가인', '공', '고', '옥', '절대', '얼굴', '비단', '얼음', '여씨'],
+        adjectives: ['차갑다', '기쁘다', '아니다', '맑다'],
         sentiment: {
-            disgust: 3,
-            anger: 5,
-            fear: 12,
-            surprise: 18,
-            happiness: 35,
-            sadness: 12,
-            neutral: 15
+            disgust: 0.04937,
+            anger: 0.00246,
+            fear: 0.00671,
+            surprise: 0.00217,
+            happiness: 0.17809,
+            sadness: 0.00427,
+            neutral: 99.75691
         },
         sentimentClass: "positive",
-        images: ["https://via.placeholder.com/400x400/667eea/ffffff?text=궁녀", "https://via.placeholder.com/400x400/764ba2/ffffff?text=궁녀+2"]
+        images: ["img/01_classic/27.png", "img/02_modern/27.png"]
     },
     {
         id: 28,
