@@ -382,23 +382,23 @@ const villainsData = [
     },
     {
         id: 20,
-        name: "허균",
-        work: "허생전",
-        description: "보통 체격에 평범한 얼굴이나, 눈빛이 예리하고 입매가 굳어있다.",
-        source: "허생전, 제4장",
-        nouns: ["체격", "얼굴", "눈빛", "입매"],
-        adjectives: ["보통이다", "평범하다", "예리하다", "굳다"],
+        name: "팥쥐",
+        work: "콩쥐팥쥐전",
+        description: "얼굴조차 덕스럽지 못하였다. ",
+        source: "다빈치맵, \"콩쥐팥쥐전\", http://www.davincimap.co.kr/davBase/Source/davSource.jsp?Job=Body&SourID=SOUR001972",
+        nouns: ["얼굴", "덕"],
+        adjectives: [],
         sentiment: {
-            disgust: 15,
-            anger: 22,
-            fear: 18,
-            surprise: 10,
-            happiness: 5,
-            sadness: 15,
-            neutral: 15
+            disgust: 96.62589,
+            anger: 0.06236,
+            fear: 0.00526,
+            surprise: 0.00469,
+            happiness: 0.01049,
+            sadness: 3.28558,
+            neutral: 0.00574
         },
         sentimentClass: "negative",
-        images: ["https://via.placeholder.com/400x400/f5576c/ffffff?text=허균", "https://via.placeholder.com/400x400/f093fb/ffffff?text=허균+2"]
+        images: ["img/01_classic/20.png", "img/02_modern/20_01.png", "img/02_modern/20_02.png"]
     },
     {
         id: 21,
