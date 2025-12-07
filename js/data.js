@@ -422,23 +422,23 @@ const villainsData = [
     },
     {
         id: 22,
-        name: "김원전",
-        work: "김원전",
-        description: "왜소한 체구에 작은 눈과 낮은 코를 가졌으며, 웃는 모습이 비굴해 보인다.",
-        source: "김원전, 제3장",
-        nouns: ["체구", "눈", "코", "모습"],
-        adjectives: ["왜소하다", "작다", "낮다", "비굴하다"],
+        name: "옥란",
+        work: "쌍천기봉",
+        description: "옥란이 자색이 절세하거늘",
+        source: "장시광,『조선시대 대하소설의 여성반동인물』, 한국학술정보, 2006, 207쪽.",
+        nouns: ['자색', '옥란'],
+        adjectives: [],
         sentiment: {
-            disgust: 32,
-            anger: 20,
-            fear: 15,
-            surprise: 8,
-            happiness: 0,
-            sadness: 20,
-            neutral: 5
+            disgust: 0.00051,
+            anger: 0.00073,
+            fear: 0.00016,
+            surprise: 0.00044,
+            happiness: 0.00031,
+            sadness: 0.00028,
+            neutral: 99.99757
         },
-        sentimentClass: "negative",
-        images: ["https://via.placeholder.com/400x400/f093fb/ffffff?text=김원전", "https://via.placeholder.com/400x400/f5576c/ffffff?text=김원전+2"]
+        sentimentClass: "positive",
+        images: ["img/01_classic/22.png", "img/02_modern/22.png"]
     },
     {
         id: 23,
