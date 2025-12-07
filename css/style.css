@@ -82,13 +82,14 @@ main {
     padding: 1rem;
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
     animation: float 6s ease-in-out infinite;
 }
 
 .floating-card:hover {
     transform: scale(1.05) !important;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.95);
     z-index: 10;
 }
 
