@@ -155,14 +155,20 @@ function updateDescription(villain) {
 // Setup image slider
 function setupImageSlider(villain) {
     const images = villain.images;
-    const modalImage = document.getElementById('modalImage');
+    const sliderContainer = document.getElementById('imageSliderContainer');
     const sliderDots = document.querySelector('.slider-dots');
     
-    // Clear existing dots
+    // Clear existing content
+    sliderContainer.innerHTML = '';
     sliderDots.innerHTML = '';
 
-    // Create dots
-    images.forEach((_, index) => {
+    // Create images and dots
+    images.forEach((src, index) => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = `${villain.name} 이미지 ${index + 1}`;
+        sliderContainer.appendChild(img);
+
         const dot = document.createElement('span');
         dot.className = 'dot';
         dot.dataset.index = index;
@@ -171,11 +177,10 @@ function setupImageSlider(villain) {
 
     const dots = document.querySelectorAll('.dot');
 
-    // Set initial image
+    // Set initial state
     if (images.length > 0) {
-        modalImage.src = images[0];
         currentImageIndex = 0;
-        updateDots();
+        updateSliderPosition();
     }
     
     // Clear existing interval
@@ -185,20 +190,19 @@ function setupImageSlider(villain) {
     
     // Start auto-slide only if there are multiple images
     if (images.length > 1) {
-        startImageSlider(images, modalImage);
+        startImageSlider(images.length);
     }
     
     // Setup dot click handlers
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
             currentImageIndex = index;
-            modalImage.src = images[currentImageIndex];
-            updateDots();
+            updateSliderPosition();
             
             // Reset interval
             if (images.length > 1) {
                 clearInterval(imageSliderInterval);
-                startImageSlider(images, modalImage);
+                startImageSlider(images.length);
             }
         });
     });
@@ -207,12 +211,19 @@ function setupImageSlider(villain) {
 }
 
 // Start image slider with auto-slide
-function startImageSlider(images, modalImage) {
+function startImageSlider(imageCount) {
     imageSliderInterval = setInterval(() => {
-        currentImageIndex = (currentImageIndex + 1) % images.length;
-        modalImage.src = images[currentImageIndex];
-        updateDots();
+        currentImageIndex = (currentImageIndex + 1) % imageCount;
+        updateSliderPosition();
     }, IMAGE_SLIDER_INTERVAL_MS);
+}
+
+// Update slider position for animation
+function updateSliderPosition() {
+    const sliderContainer = document.getElementById('imageSliderContainer');
+    const slideWidth = sliderContainer.clientWidth;
+    sliderContainer.style.transform = `translateX(-${currentImageIndex * slideWidth}px)`;
+    updateDots();
 }
 
 // Update slider dots

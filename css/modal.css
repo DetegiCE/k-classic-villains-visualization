@@ -86,10 +86,22 @@
     position: relative;
 }
 
-.image-slider img {
+.image-slider-viewport {
     width: 100%;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.image-slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-slider-container img {
+    width: 100%;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 .slider-dots {
