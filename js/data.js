@@ -62,23 +62,23 @@ const villainsData = [
     },
     {
         id: 4,
-        name: "변학도",
-        work: "춘향전",
-        description: "비만한 체구에 얼굴이 붉고, 코가 짧으며 눈이 작아 탐욕스러운 기운이 감돈다.",
-        source: "춘향전, 제8장",
-        nouns: ["체구", "얼굴", "코", "눈", "기운"],
-        adjectives: ["비만하다", "붉다", "짧다", "작다", "탐욕스럽다"],
+        name: "박씨",
+        work: "현몽쌍룡기",
+        description: "세상에 비교할 곳 없는 미인",
+        source: "조혜란,「악행(惡行)의 서사화 방식과 진지성의 문제 —<현몽쌍룡기>를 중심으로—」, 『한국고전연구』 제23권, 한국고전연구학회, 2011년, 9쪽.",
+        nouns: ['세상', '미인', '비교', '곳'],
+        adjectives: ["없다"],
         sentiment: {
-            disgust: 40,
-            anger: 30,
-            fear: 10,
-            surprise: 5,
-            happiness: 0,
-            sadness: 5,
-            neutral: 10
+            disgust: 0.62638,
+            anger: 0.69225,
+            fear: 0.01936,
+            surprise: 54.62804,
+            happiness: 13.07742,
+            sadness: 0.04316,
+            neutral: 30.91339
         },
-        sentimentClass: "negative",
-        images: ["img/test.jpg", "https://via.placeholder.com/400x400/f093fb/ffffff?text=변학도+2"]
+        sentimentClass: "positive",
+        images: ["img/01_classic/04.png", "img/02_modern/04.png"]
     },
     {
         id: 5,
