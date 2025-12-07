@@ -102,23 +102,23 @@ const villainsData = [
     },
     {
         id: 6,
-        name: "정한담",
-        work: "정한담전",
-        description: "키가 크고 마른 체격에 눈이 움푹 들어가 있으며, 피부가 거칠고 손톱이 길다.",
-        source: "정한담전, 제4장",
-        nouns: ["키", "체격", "눈", "피부", "손톱"],
-        adjectives: ["크다", "마르다", "움푹하다", "거칠다", "길다"],
+        name: "장씨",
+        work: "화산기봉",
+        description: "장씨는 기질이 아름답고 재주가 영민하였다. 게다가 최고의 미인이었던 조비연이나 서시만큼 아름다웠다. 꽃을 새긴 듯한 두뺨에는 봄빛이 가득하였고 옥으로 쌓은 듯한 이마는 가을달처럼 빛났으며 맑은 눈동자는 새벽별이 비추는 듯하였다. 지조 있는 기질과 단정한 자태가 자리에 빛나니 소씨와 비교해도 조금도 부족하지 않았다. 다만 풍족한 외모와 현숙한 기질은 조금 미치지 못하였다.",
+        source: "임치균·김인회 역, 『화산기봉』, 한국학중앙연구원출판, 2018. 1권 19-20쪽.",
+        nouns: ['자태', '듯', '봄빛', '기질', '장씨', '눈동자', '자리', '현숙', '새벽별이', '서시', '다만', '영민', '게다가', '미인', '가을', '외모', '최고', '조비연', '조금', '달', '꽃', '재주', '뺨', '지조', '옥', '맑은', '이마', '소씨', '비교'],
+        adjectives: ['가득하다', '아름답다', '있다', '단정하다', '풍족하다', '부족하다', '미치다'],
         sentiment: {
-            disgust: 28,
-            anger: 20,
-            fear: 32,
-            surprise: 8,
-            happiness: 0,
-            sadness: 7,
-            neutral: 5
+            disgust: 0.00048,
+            anger: 0.00010,
+            fear: 0.00042,
+            surprise: 0.00035,
+            happiness: 99.99746,
+            sadness: 0.00019,
+            neutral: 0.00099
         },
-        sentimentClass: "negative",
-        images: ["https://via.placeholder.com/400x400/f093fb/ffffff?text=정한담", "https://via.placeholder.com/400x400/f5576c/ffffff?text=정한담+2"]
+        sentimentClass: "positive",
+        images: ["img/01_classic/06.png", "img/02_modern/06.png"]
     },
     {
         id: 7,
