@@ -622,42 +622,42 @@ const villainsData = [
     },
     {
         id: 32,
-        name: "악관리",
-        work: "탐관오리전",
-        description: "비대한 체격에 얼굴이 붉고, 눈이 작아 탐욕스러운 인상이다.",
-        source: "탐관오리전, 제3장",
-        nouns: ["체격", "얼굴", "눈", "인상"],
-        adjectives: ["비대하다", "붉다", "작다", "탐욕스럽다"],
+        name: "기부인",
+        work: "화산선계록",
+        description: "용모 또한 아름답지 못하니",
+        source: "장시광,『조선시대 대하소설의 여성반동인물』, 한국학술정보, 2006, 234쪽.",
+        nouns: ["용모", "또한"],
+        adjectives: ["아름답다"],
         sentiment: {
-            disgust: 40,
-            anger: 35,
-            fear: 10,
-            surprise: 5,
-            happiness: 0,
-            sadness: 5,
-            neutral: 5
+            disgust: 99.62513,
+            anger: 0.00886,
+            fear: 0.00448,
+            surprise: 0.00783,
+            happiness: 0.00203,
+            sadness: 0.34459,
+            neutral: 0.00709
         },
         sentimentClass: "negative",
-        images: ["https://via.placeholder.com/400x400/f5576c/ffffff?text=악관리", "https://via.placeholder.com/400x400/f093fb/ffffff?text=악관리+2"]
+        images: ["img/01_classic/32.png", "img/02_modern/32.png"]
     },
     {
         id: 33,
-        name: "마녀",
-        work: "마녀전",
-        description: "늙고 주름진 얼굴에 눈이 흐리며, 머리카락이 헝클어지고 손톱이 길다.",
-        source: "마녀전, 제1장",
-        nouns: ["얼굴", "눈", "머리카락", "손톱"],
-        adjectives: ["늙다", "주름지다", "흐리다", "헝클어지다", "길다"],
+        name: "연군주",
+        work: "명주보월빙",
+        description: "신부가 단장을 고쳐 사당에 절하고 시아버지에게 뵐 때 걸음걸이가 난잡하여 청사가 움직이고 숨소리가 괴이해 쟁기 맨 소의 소리 같으며 두 눈에는 한 조각의 영특한 빛이 없어 검고 둥글며 양 눈썹은 쑥밭 같고 내민 이마에는 큰 혹이 돋아 있으며 두 뺨은 푸르딩딩해 무잎 같고 입은 쭉 튀어나왔고 두 귀 아래에는 쌍으로 혹이 달렸으며 코는 높아 큰 낯을 덮고 있고 허리는 축 퍼진 것이 떡을 칠 때 쓰는 나무판만하고 키는 겨우 열 살 어린아이만 하니 기이한 모습과 괴상한 모양이 가지가지로 갖춰져 기절할 지경이라",
+        source: "장시광,『조선시대 대하소설의 여성반동인물』, 한국학술정보, 2006, 225쪽.",
+        nouns: ['소리', '하니', '푸르딩딩해', '귀', '축', '두', '눈썹', '가지가지', '사당', '조각', '괴이', '낯', '소의', '영특', '것', '나무', '숨소리', '단장', '열', '떡', '맨', '기절', '때', '눈', '모양', '쭉', '청사', '시아버지', '절하', '판', '허리', '겨우', '신부', '양', '쌍', '살', '쟁기', '무잎', '지경', '뺨', '칠', '쑥밭', '빛', '움직', '혹', '걸음걸이', '아래', '코', '이마', '키', '모습'],
+        adjectives: ['높다', '난잡하다', '둥글다', '검다', '있다', '괴상하다', '기이하다', '같다', '없다'],
         sentiment: {
-            disgust: 38,
-            anger: 20,
-            fear: 30,
-            surprise: 7,
-            happiness: 0,
-            sadness: 3,
-            neutral: 2
+            disgust: 99.76606,
+            anger: 0.00446,
+            fear: 0.20687,
+            surprise: 0.00464,
+            happiness: 0.00863,
+            sadness: 0.00479,
+            neutral: 0.00455
         },
         sentimentClass: "negative",
-        images: ["https://via.placeholder.com/400x400/764ba2/ffffff?text=마녀", "https://via.placeholder.com/400x400/667eea/ffffff?text=마녀+2"]
+        images: ["img/01_classic/33.png", "img/02_modern/33_01.png", "img/02_modern/33_02.png", "img/02_modern/33_03.png", "img/02_modern/33_04.png", "img/02_modern/33_05.png", "img/02_modern/33_06.png"]
     }
 ];
