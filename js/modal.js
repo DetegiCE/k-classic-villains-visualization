@@ -154,20 +154,39 @@ function updateDescription(villain) {
 
 // Setup image slider
 function setupImageSlider(villain) {
-    const images = [villain.image1, villain.image2];
+    const images = villain.images;
     const modalImage = document.getElementById('modalImage');
-    const dots = document.querySelectorAll('.dot');
+    const sliderDots = document.querySelector('.slider-dots');
     
+    // Clear existing dots
+    sliderDots.innerHTML = '';
+
+    // Create dots
+    images.forEach((_, index) => {
+        const dot = document.createElement('span');
+        dot.className = 'dot';
+        dot.dataset.index = index;
+        sliderDots.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll('.dot');
+
     // Set initial image
-    modalImage.src = images[0];
+    if (images.length > 0) {
+        modalImage.src = images[0];
+        currentImageIndex = 0;
+        updateDots();
+    }
     
     // Clear existing interval
     if (imageSliderInterval) {
         clearInterval(imageSliderInterval);
     }
     
-    // Start auto-slide
-    startImageSlider(images, modalImage);
+    // Start auto-slide only if there are multiple images
+    if (images.length > 1) {
+        startImageSlider(images, modalImage);
+    }
     
     // Setup dot click handlers
     dots.forEach((dot, index) => {
@@ -177,8 +196,10 @@ function setupImageSlider(villain) {
             updateDots();
             
             // Reset interval
-            clearInterval(imageSliderInterval);
-            startImageSlider(images, modalImage);
+            if (images.length > 1) {
+                clearInterval(imageSliderInterval);
+                startImageSlider(images, modalImage);
+            }
         });
     });
     
@@ -188,7 +209,7 @@ function setupImageSlider(villain) {
 // Start image slider with auto-slide
 function startImageSlider(images, modalImage) {
     imageSliderInterval = setInterval(() => {
-        currentImageIndex = (currentImageIndex + 1) % 2;
+        currentImageIndex = (currentImageIndex + 1) % images.length;
         modalImage.src = images[currentImageIndex];
         updateDots();
     }, IMAGE_SLIDER_INTERVAL_MS);
@@ -340,7 +361,7 @@ function createSimilarCard(villain) {
     card.className = 'similar-card';
     
     card.innerHTML = `
-        <img src="${villain.image1}" alt="${villain.name}">
+        <img src="${villain.images[0]}" alt="${villain.name}">
         <div class="card-info">
             <div class="card-name">${villain.name}</div>
             <div class="card-work">${villain.work}</div>

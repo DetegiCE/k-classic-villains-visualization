@@ -69,7 +69,7 @@ function createFloatingCard(villain) {
     
     card.innerHTML = `
         <div class="img-container">
-            <img src="${villain.image1}" alt="${villain.name}">
+            <img src="${villain.images[0]}" alt="${villain.name}">
         </div>
         <div class="card-info">
             <div class="card-name">${villain.name}</div>
@@ -99,7 +99,7 @@ function createListCard(villain) {
     card.dataset.villainId = villain.id;
     
     card.innerHTML = `
-        <img src="${villain.image1}" alt="${villain.name}">
+        <img src="${villain.images[0]}" alt="${villain.name}">
         <div class="card-info">
             <div class="card-name">${villain.name}</div>
             <div class="card-work">${villain.work}</div>

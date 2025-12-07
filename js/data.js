@@ -18,8 +18,7 @@ const villainsData = [
             neutral: 0.00089
         },
         sentimentClass: "negative",
-        image1: "img/test.jpg",
-        image2: "https://via.placeholder.com/400x400/667eea/ffffff?text=장화+2"
+        images: ["img/test.jpg", "https://via.placeholder.com/400x400/667eea/ffffff?text=장화+2"]
     },
     {
         id: 2,
@@ -39,8 +38,7 @@ const villainsData = [
             neutral: 10
         },
         sentimentClass: "negative",
-        image1: "img/test.jpg",
-        image2: "https://via.placeholder.com/400x400/f5576c/ffffff?text=허생원+2"
+        images: ["img/test.jpg", "https://via.placeholder.com/400x400/f5576c/ffffff?text=허생원+2"]
     },
     {
         id: 3,
@@ -60,8 +58,7 @@ const villainsData = [
             neutral: 5
         },
         sentimentClass: "negative",
-        image1: "img/test.jpg",
-        image2: "https://via.placeholder.com/400x400/764ba2/ffffff?text=강씨부인+2"
+        images: ["img/test.jpg", "https://via.placeholder.com/400x400/764ba2/ffffff?text=강씨부인+2"]
     },
     {
         id: 4,
@@ -81,8 +78,7 @@ const villainsData = [
             neutral: 10
         },
         sentimentClass: "negative",
-        image1: "img/test.jpg",
-        image2: "https://via.placeholder.com/400x400/f093fb/ffffff?text=변학도+2"
+        images: ["img/test.jpg", "https://via.placeholder.com/400x400/f093fb/ffffff?text=변학도+2"]
     },
     {
         id: 5,
@@ -102,8 +98,7 @@ const villainsData = [
             neutral: 15
         },
         sentimentClass: "neutral",
-        image1: "https://via.placeholder.com/400x400/764ba2/ffffff?text=옥단춘",
-        image2: "https://via.placeholder.com/400x400/667eea/ffffff?text=옥단춘+2"
+        images: ["https://via.placeholder.com/400x400/764ba2/ffffff?text=옥단춘", "https://via.placeholder.com/400x400/667eea/ffffff?text=옥단춘+2"]
     },
     {
         id: 6,
@@ -123,8 +118,7 @@ const villainsData = [
             neutral: 5
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/f093fb/ffffff?text=정한담",
-        image2: "https://via.placeholder.com/400x400/f5576c/ffffff?text=정한담+2"
+        images: ["https://via.placeholder.com/400x400/f093fb/ffffff?text=정한담", "https://via.placeholder.com/400x400/f5576c/ffffff?text=정한담+2"]
     },
     {
         id: 7,
@@ -144,8 +138,7 @@ const villainsData = [
             neutral: 30
         },
         sentimentClass: "neutral",
-        image1: "https://via.placeholder.com/400x400/667eea/ffffff?text=배비장",
-        image2: "https://via.placeholder.com/400x400/764ba2/ffffff?text=배비장+2"
+        images: ["https://via.placeholder.com/400x400/667eea/ffffff?text=배비장", "https://via.placeholder.com/400x400/764ba2/ffffff?text=배비장+2"]
     },
     {
         id: 8,
@@ -165,8 +158,7 @@ const villainsData = [
             neutral: 10
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/f5576c/ffffff?text=운영",
-        image2: "https://via.placeholder.com/400x400/f093fb/ffffff?text=운영+2"
+        images: ["https://via.placeholder.com/400x400/f5576c/ffffff?text=운영", "https://via.placeholder.com/400x400/f093fb/ffffff?text=운영+2"]
     },
     {
         id: 9,
@@ -186,8 +178,7 @@ const villainsData = [
             neutral: 5
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/764ba2/ffffff?text=김진사",
-        image2: "https://via.placeholder.com/400x400/667eea/ffffff?text=김진사+2"
+        images: ["https://via.placeholder.com/400x400/764ba2/ffffff?text=김진사", "https://via.placeholder.com/400x400/667eea/ffffff?text=김진사+2"]
     },
     {
         id: 10,
@@ -207,8 +198,7 @@ const villainsData = [
             neutral: 11
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/f093fb/ffffff?text=최씨",
-        image2: "https://via.placeholder.com/400x400/f5576c/ffffff?text=최씨+2"
+        images: ["https://via.placeholder.com/400x400/f093fb/ffffff?text=최씨", "https://via.placeholder.com/400x400/f5576c/ffffff?text=최씨+2"]
     },
     {
         id: 11,
@@ -228,8 +218,7 @@ const villainsData = [
             neutral: 10
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/667eea/ffffff?text=홍부인",
-        image2: "https://via.placeholder.com/400x400/764ba2/ffffff?text=홍부인+2"
+        images: ["https://via.placeholder.com/400x400/667eea/ffffff?text=홍부인", "https://via.placeholder.com/400x400/764ba2/ffffff?text=홍부인+2"]
     },
     {
         id: 12,
@@ -249,8 +238,7 @@ const villainsData = [
             neutral: 15
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/f5576c/ffffff?text=진봉사",
-        image2: "https://via.placeholder.com/400x400/f093fb/ffffff?text=진봉사+2"
+        images: ["https://via.placeholder.com/400x400/f5576c/ffffff?text=진봉사", "https://via.placeholder.com/400x400/f093fb/ffffff?text=진봉사+2"]
     },
     {
         id: 13,
@@ -270,8 +258,7 @@ const villainsData = [
             neutral: 12
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/764ba2/ffffff?text=심청",
-        image2: "https://via.placeholder.com/400x400/667eea/ffffff?text=심청+2"
+        images: ["https://via.placeholder.com/400x400/764ba2/ffffff?text=심청", "https://via.placeholder.com/400x400/667eea/ffffff?text=심청+2"]
     },
     {
         id: 14,
@@ -291,8 +278,7 @@ const villainsData = [
             neutral: 15
         },
         sentimentClass: "neutral",
-        image1: "https://via.placeholder.com/400x400/f093fb/ffffff?text=이춘풍",
-        image2: "https://via.placeholder.com/400x400/f5576c/ffffff?text=이춘풍+2"
+        images: ["https://via.placeholder.com/400x400/f093fb/ffffff?text=이춘풍", "https://via.placeholder.com/400x400/f5576c/ffffff?text=이춘풍+2"]
     },
     {
         id: 15,
@@ -312,8 +298,7 @@ const villainsData = [
             neutral: 5
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/667eea/ffffff?text=박씨",
-        image2: "https://via.placeholder.com/400x400/764ba2/ffffff?text=박씨+2"
+        images: ["https://via.placeholder.com/400x400/667eea/ffffff?text=박씨", "https://via.placeholder.com/400x400/764ba2/ffffff?text=박씨+2"]
     },
     {
         id: 16,
@@ -333,8 +318,7 @@ const villainsData = [
             neutral: 10
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/f5576c/ffffff?text=임경업",
-        image2: "https://via.placeholder.com/400x400/f093fb/ffffff?text=임경업+2"
+        images: ["https://via.placeholder.com/400x400/f5576c/ffffff?text=임경업", "https://via.placeholder.com/400x400/f093fb/ffffff?text=임경업+2"]
     },
     {
         id: 17,
@@ -354,8 +338,7 @@ const villainsData = [
             neutral: 15
         },
         sentimentClass: "neutral",
-        image1: "https://via.placeholder.com/400x400/764ba2/ffffff?text=조웅",
-        image2: "https://via.placeholder.com/400x400/667eea/ffffff?text=조웅+2"
+        images: ["https://via.placeholder.com/400x400/764ba2/ffffff?text=조웅", "https://via.placeholder.com/400x400/667eea/ffffff?text=조웅+2"]
     },
     {
         id: 18,
@@ -375,8 +358,7 @@ const villainsData = [
             neutral: 20
         },
         sentimentClass: "neutral",
-        image1: "https://via.placeholder.com/400x400/f093fb/ffffff?text=유충렬",
-        image2: "https://via.placeholder.com/400x400/f5576c/ffffff?text=유충렬+2"
+        images: ["https://via.placeholder.com/400x400/f093fb/ffffff?text=유충렬", "https://via.placeholder.com/400x400/f5576c/ffffff?text=유충렬+2"]
     },
     {
         id: 19,
@@ -396,8 +378,7 @@ const villainsData = [
             neutral: 10
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/667eea/ffffff?text=심학규",
-        image2: "https://via.placeholder.com/400x400/764ba2/ffffff?text=심학규+2"
+        images: ["https://via.placeholder.com/400x400/667eea/ffffff?text=심학규", "https://via.placeholder.com/400x400/764ba2/ffffff?text=심학규+2"]
     },
     {
         id: 20,
@@ -417,8 +398,7 @@ const villainsData = [
             neutral: 15
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/f5576c/ffffff?text=허균",
-        image2: "https://via.placeholder.com/400x400/f093fb/ffffff?text=허균+2"
+        images: ["https://via.placeholder.com/400x400/f5576c/ffffff?text=허균", "https://via.placeholder.com/400x400/f093fb/ffffff?text=허균+2"]
     },
     {
         id: 21,
@@ -438,8 +418,7 @@ const villainsData = [
             neutral: 5
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/764ba2/ffffff?text=신관호",
-        image2: "https://via.placeholder.com/400x400/667eea/ffffff?text=신관호+2"
+        images: ["https://via.placeholder.com/400x400/764ba2/ffffff?text=신관호", "https://via.placeholder.com/400x400/667eea/ffffff?text=신관호+2"]
     },
     {
         id: 22,
@@ -459,8 +438,7 @@ const villainsData = [
             neutral: 5
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/f093fb/ffffff?text=김원전",
-        image2: "https://via.placeholder.com/400x400/f5576c/ffffff?text=김원전+2"
+        images: ["https://via.placeholder.com/400x400/f093fb/ffffff?text=김원전", "https://via.placeholder.com/400x400/f5576c/ffffff?text=김원전+2"]
     },
     {
         id: 23,
@@ -480,8 +458,7 @@ const villainsData = [
             neutral: 14
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/667eea/ffffff?text=이생",
-        image2: "https://via.placeholder.com/400x400/764ba2/ffffff?text=이생+2"
+        images: ["https://via.placeholder.com/400x400/667eea/ffffff?text=이생", "https://via.placeholder.com/400x400/764ba2/ffffff?text=이생+2"]
     },
     {
         id: 24,
@@ -501,8 +478,7 @@ const villainsData = [
             neutral: 15
         },
         sentimentClass: "neutral",
-        image1: "https://via.placeholder.com/400x400/f5576c/ffffff?text=최치원",
-        image2: "https://via.placeholder.com/400x400/f093fb/ffffff?text=최치원+2"
+        images: ["https://via.placeholder.com/400x400/f5576c/ffffff?text=최치원", "https://via.placeholder.com/400x400/f093fb/ffffff?text=최치원+2"]
     },
     {
         id: 25,
@@ -522,8 +498,7 @@ const villainsData = [
             neutral: 20
         },
         sentimentClass: "positive",
-        image1: "https://via.placeholder.com/400x400/764ba2/ffffff?text=강감찬",
-        image2: "https://via.placeholder.com/400x400/667eea/ffffff?text=강감찬+2"
+        images: ["https://via.placeholder.com/400x400/764ba2/ffffff?text=강감찬", "https://via.placeholder.com/400x400/667eea/ffffff?text=강감찬+2"]
     },
     {
         id: 26,
@@ -543,8 +518,7 @@ const villainsData = [
             neutral: 15
         },
         sentimentClass: "positive",
-        image1: "https://via.placeholder.com/400x400/f093fb/ffffff?text=선녀",
-        image2: "https://via.placeholder.com/400x400/f5576c/ffffff?text=선녀+2"
+        images: ["https://via.placeholder.com/400x400/f093fb/ffffff?text=선녀", "https://via.placeholder.com/400x400/f5576c/ffffff?text=선녀+2"]
     },
     {
         id: 27,
@@ -564,8 +538,7 @@ const villainsData = [
             neutral: 15
         },
         sentimentClass: "positive",
-        image1: "https://via.placeholder.com/400x400/667eea/ffffff?text=궁녀",
-        image2: "https://via.placeholder.com/400x400/764ba2/ffffff?text=궁녀+2"
+        images: ["https://via.placeholder.com/400x400/667eea/ffffff?text=궁녀", "https://via.placeholder.com/400x400/764ba2/ffffff?text=궁녀+2"]
     },
     {
         id: 28,
@@ -585,8 +558,7 @@ const villainsData = [
             neutral: 5
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/f5576c/ffffff?text=무사",
-        image2: "https://via.placeholder.com/400x400/f093fb/ffffff?text=무사+2"
+        images: ["https://via.placeholder.com/400x400/f5576c/ffffff?text=무사", "https://via.placeholder.com/400x400/f093fb/ffffff?text=무사+2"]
     },
     {
         id: 29,
@@ -606,8 +578,7 @@ const villainsData = [
             neutral: 20
         },
         sentimentClass: "neutral",
-        image1: "https://via.placeholder.com/400x400/764ba2/ffffff?text=상인",
-        image2: "https://via.placeholder.com/400x400/667eea/ffffff?text=상인+2"
+        images: ["https://via.placeholder.com/400x400/764ba2/ffffff?text=상인", "https://via.placeholder.com/400x400/667eea/ffffff?text=상인+2"]
     },
     {
         id: 30,
@@ -627,8 +598,7 @@ const villainsData = [
             neutral: 12
         },
         sentimentClass: "positive",
-        image1: "https://via.placeholder.com/400x400/f093fb/ffffff?text=기생",
-        image2: "https://via.placeholder.com/400x400/f5576c/ffffff?text=기생+2"
+        images: ["https://via.placeholder.com/400x400/f093fb/ffffff?text=기생", "https://via.placeholder.com/400x400/f5576c/ffffff?text=기생+2"]
     },
     {
         id: 31,
@@ -648,8 +618,7 @@ const villainsData = [
             neutral: 2
         },
         sentimentClass: "negative",
-        image1: "img/test.jpg",
-        image2: "https://via.placeholder.com/400x400/764ba2/ffffff?text=도적+2"
+        images: ["img/test.jpg", "https://via.placeholder.com/400x400/764ba2/ffffff?text=도적+2"]
     },
     {
         id: 32,
@@ -669,8 +638,7 @@ const villainsData = [
             neutral: 5
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/f5576c/ffffff?text=악관리",
-        image2: "https://via.placeholder.com/400x400/f093fb/ffffff?text=악관리+2"
+        images: ["https://via.placeholder.com/400x400/f5576c/ffffff?text=악관리", "https://via.placeholder.com/400x400/f093fb/ffffff?text=악관리+2"]
     },
     {
         id: 33,
@@ -690,7 +658,6 @@ const villainsData = [
             neutral: 2
         },
         sentimentClass: "negative",
-        image1: "https://via.placeholder.com/400x400/764ba2/ffffff?text=마녀",
-        image2: "https://via.placeholder.com/400x400/667eea/ffffff?text=마녀+2"
+        images: ["https://via.placeholder.com/400x400/764ba2/ffffff?text=마녀", "https://via.placeholder.com/400x400/667eea/ffffff?text=마녀+2"]
     }
 ];
