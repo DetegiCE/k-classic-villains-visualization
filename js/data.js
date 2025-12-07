@@ -462,23 +462,23 @@ const villainsData = [
     },
     {
         id: 24,
-        name: "최치원",
-        work: "최치원전",
-        description: "수려한 외모에 눈매가 부드러우나, 입가에 씁쓸한 미소가 걸려있다.",
-        source: "최치원전, 제2장",
-        nouns: ["외모", "눈매", "입가", "미소"],
-        adjectives: ["수려하다", "부드럽다", "씁쓸하다"],
+        name: "숙정공주(곽소옥)",
+        work: "화산선계록",
+        description: "추수, 가을 물 같은 눈길을 흘겨 처음으로 공주를 보니, 어지럽고 화려한 화장 속에 여우의 형상을 썼으며, 수놓은 방석 위에 성난 이리가 앉아 있는 듯, 얼굴은 희고 입은 붉으나 두 눈의 눈빛이 푸르고 사나워 제 명에 죽을 상이 아니니, 음탕하고 사악한 것은 도리어 예사라. 총명과 재주가 온몸에 흉악하여 어찌 대면할 이가 있으리오",
+        source: "장시광,『조선시대 대하소설의 여성반동인물』, 한국학술정보, 2006, 209쪽.",
+        nouns: ['여우', '흘겨', '눈길', '듯', '두', '어찌', '처음', '얼굴', '눈빛', '예사', '추수', '속', '공주', '명', '것', '총명', '상이', '수', '온몸', '도리어', '위', '제', '눈', '물', '방석', '가을', '형상', '이', '재주', '리오', '죽', '화장', '대면', '리가'],
+        adjectives: ['희다', '사납다', '있다', '흉악하다', '화려하다', '같다', '사악하다', '푸르다', '붉다', '아니다', '음탕하다', '어지럽다'],
         sentiment: {
-            disgust: 8,
-            anger: 10,
-            fear: 12,
-            surprise: 15,
-            happiness: 10,
-            sadness: 30,
-            neutral: 15
+            disgust: 99.97858,
+            anger: 0.00377,
+            fear: 0.00606,
+            surprise: 0.00085,
+            happiness: 0.00306,
+            sadness: 0.00705,
+            neutral: 0.00062
         },
-        sentimentClass: "neutral",
-        images: ["https://via.placeholder.com/400x400/f5576c/ffffff?text=최치원", "https://via.placeholder.com/400x400/f093fb/ffffff?text=최치원+2"]
+        sentimentClass: "negative",
+        images: ["img/01_classic/24.png", "img/02_modern/24_01.png", "img/02_modern/24_02.png"]
     },
     {
         id: 25,
